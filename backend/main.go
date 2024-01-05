@@ -42,6 +42,7 @@ func main(){
     router.HandleFunc("/api/go/users/{id}", deleteUser(db)).Methods("DELETE")
 
     enhancedRouter := enableCORS(jsonContentTypeMiddleware(router))
+![Example Image](example.png)
 
     log.Fatal(http.ListenAndServe(":8080", enhancedRouter))
 
