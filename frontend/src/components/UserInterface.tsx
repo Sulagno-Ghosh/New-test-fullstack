@@ -14,6 +14,7 @@ interface UserInterfaceProps{
 
 const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
 
+
   const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
   const [users, setUsers] = useState<User[]>([]);
   const [newUser, setNewUser] = useState<User>({name: '', email: ''});
