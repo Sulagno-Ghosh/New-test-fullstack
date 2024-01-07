@@ -21,7 +21,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
   const [updateUser, setUpdateUser] = useState<User>({id: '', name: '', email: ''});
 
   const backgroundColors: { [key: string]: string } = {
-    go: 'bg-cyan-500',
+    go: 'bg-cyan-400',
   };
 
    const buttonColors: { [key: string]: string } = {
