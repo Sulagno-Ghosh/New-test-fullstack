@@ -95,6 +95,7 @@ func getUsers(db *sql.DB) http.HandlerFunc {
     for rows.Next() {
       var u User
 
+
       err := rows.Scan(&u.Id, &u.Name, &u.Email)
 
       if err != nil {
