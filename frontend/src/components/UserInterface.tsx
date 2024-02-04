@@ -21,11 +21,11 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
   const [updateUser, setUpdateUser] = useState<User>({id: '', name: '', email: ''});
 
   const backgroundColors: { [key: string]: string } = {
-    go: 'bg-cyan-400',
+    go: 'bg-red-400',
   };
 
    const buttonColors: { [key: string]: string } = {
-    go: 'bg-cyan-300 hover:bg-blue-700',
+    go: 'bg-red-300 hover:bg-blue-700',
   };
 
   const bgColor = backgroundColors[backendName as keyof typeof backgroundColors] || 'bg-gray-200';
@@ -46,7 +46,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
 
   return (
     <div className={`user-interface ${bgColor} ${backendName} w-full max-w-md p-4 my-4 rounded shadow`}>
-      test1
+      test
     </div>
   )
 }
